@@ -31,6 +31,17 @@ class loginPage {
     get loginOverlay(){
         return $('#overlay');
     }
+
+    /**
+     * 
+     * @param {string} email 
+     * @param {string} password 
+     */
+    login(email, password){
+        this.emailField.setValue(email);
+        this.passwordField.setValue(password);
+        this.submitButton.click();
+    }
 }
 
 module.exports = new loginPage();

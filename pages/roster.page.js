@@ -26,6 +26,10 @@ class RosterPage {
         return $('#hero-list > li:nth-child(6)')
     }
 
+    get rosterItems(){
+        return $$('#hero-list > li')
+    }
+
     get addHeroLabel(){
         return $('#addHero-form > div > label')
     }
@@ -34,6 +38,15 @@ class RosterPage {
     }
     get submitButton(){
         return $('#addHero-form > button')
+    }
+
+    /**
+     * 
+     * @param {string} hero 
+     */
+    addHero(hero){
+        this.addHeroField.setValue(hero);
+        this.submitButton.click();
     }
 }
     

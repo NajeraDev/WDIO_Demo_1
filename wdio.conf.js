@@ -21,7 +21,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './tests/*.spec.js'
+        './tests/rosterDynamic.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
